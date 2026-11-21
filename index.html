@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Life Counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Life Counter</h1>
+    <label for="birthdate">Your birth date</label>
+    <input type="date" id="birthdate">
+
+    <section id="cycle-gif">
+      <figure class="gif-card">
+        <img src="heart-only.gif" alt="Animated beating human heart">
+        <figcaption>
+          Animation by <a href="https://docjana.com/cardiac-cycle/" target="_blank" rel="noopener">Doctor Jana (docjana.com)</a>, shared under a Creative Commons license.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="stats" hidden>
+      <div class="card"><span id="days" class="num">0</span><span class="label">days lived</span></div>
+      <div class="card"><span id="heartbeats" class="num">0</span><span class="label">heartbeats</span></div>
+      <div class="card"><span id="breaths" class="num">0</span><span class="label">breaths</span></div>
+      <div class="card"><span id="blinks" class="num">0</span><span class="label">blinks</span></div>
+    </section>
+
+    <section id="share-bar" hidden>
+      <button type="button" id="share-btn" class="share-btn" aria-label="Share my life counter card">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 16V4"/>
+          <path d="M7 9l5-5 5 5"/>
+          <path d="M5 14v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"/>
+        </svg>
+        <span>Share my card</span>
+      </button>
+      <p id="share-note" class="share-note" role="status"></p>
+    </section>
+
+    <section id="milestones" hidden>
+      <h2>Milestone days</h2>
+      <ul id="milestone-list"></ul>
+    </section>
+
+    <p class="note">Counts are estimates based on average rates: about 70 heartbeats per minute, 16 breaths per minute, and 15 blinks per minute while awake (16 hours a day).</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
