@@ -3,7 +3,7 @@
 
 Enter your birth date and see your life in numbers: days lived, heartbeats, breaths and blinks, ticking up live. Then turn it into a shareable card.
 
-**Live demo:** https://YOUR-USERNAME.github.io/life-counter/
+**Live demo:** https://ezzzzz7777.github.io/life-in-numbers-/
 
 <!-- Add a screenshot or GIF of the page here, for example: -->
 <!-- ![Life in Numbers screenshot](screenshot.png) -->
